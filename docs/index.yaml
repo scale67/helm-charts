@@ -1,5 +1,51 @@
 apiVersion: v1
 entries:
+  geoffrey:
+  - annotations:
+      artifacthub.io/category: integration-delivery
+      artifacthub.io/images: |
+        - name: jenkins
+          image: docker.io/jenkins/jenkins:2.516.2-jdk21
+        - name: k8s-sidecar
+          image: docker.io/kiwigrid/k8s-sidecar:1.30.7
+        - name: inbound-agent
+          image: jenkins/inbound-agent:3327.v868139a_d00e0-6
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/jenkinsci/helm-charts/tree/main/charts/jenkins
+        - name: Jenkins
+          url: https://www.jenkins.io/
+        - name: support
+          url: https://github.com/jenkinsci/helm-charts/issues
+    apiVersion: v1
+    appVersion: 2.516.2
+    created: "2025-09-01T09:38:44.575069-04:00"
+    description: 'Geoffrey - Build great things at any scale! As the leading open
+      source automation server, Geoffrey provides over 2000 plugins to support building,
+      deploying and automating any project. '
+    digest: 6501382dc1be5ed48682c109427f2235a1f9f42f5c368c8dd03964f68331bba1
+    home: https://www.scale67.io/
+    icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
+    keywords:
+    - jenkins
+    - geoffrey
+    - ci
+    - devops
+    - salesops
+    maintainers:
+    - email: fredrick.thornton@scale67.io
+      name: fthornton67
+    name: geoffrey
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-inbound-agent
+    - https://github.com/maorfr/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    type: application
+    urls:
+    - geoffrey-5.8.83.tgz
+    version: 5.8.83
   jenkins:
   - annotations:
       artifacthub.io/category: integration-delivery
@@ -20,7 +66,7 @@ entries:
           url: https://github.com/jenkinsci/helm-charts/issues
     apiVersion: v2
     appVersion: 2.516.2
-    created: "2025-09-01T09:32:17.566915-04:00"
+    created: "2025-09-01T09:38:44.579299-04:00"
     description: 'Jenkins - Build great things at any scale! As the leading open source
       automation server, Jenkins provides over 2000 plugins to support building, deploying
       and automating any project. '
@@ -52,4 +98,4 @@ entries:
     urls:
     - jenkins-5.8.83.tgz
     version: 5.8.83
-generated: "2025-09-01T09:32:17.563564-04:00"
+generated: "2025-09-01T09:38:44.572069-04:00"
